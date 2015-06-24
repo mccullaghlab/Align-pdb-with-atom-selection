@@ -1,0 +1,20 @@
+align_pdb.py is a script designed to align two pdbs given an atom selection.  The number of atoms in the selection must be the same.  The program aligns the "input" pdb to the reference pdb to best align the given atom selection.  This is done using the MDAnalysis library for python.
+
+USAGE: align_pdb.py [config file]
+
+CONFIG FILE FORMAT:
+
+inpPdbFile = [input pdb file]
+refPdbFile = [refernece pdb file]
+outPdbFile = [output pdb file]
+refAtomSel = [atom selection for reference pdb]
+inpAtomSel = [atom selection for input pdb]
+atomSel = [atom selection for both pdbs]
+
+NOTES:
+Configuration keywords are not case sensitive.  Ordering does not matter.  If atomSel is defined it will overwrite refAtomSel and inpAtomSel.
+
+
+
+
+
